@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CommBank Transaction Exporter</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    button {
+      padding: 8px 16px;
+      background-color: #fc0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #e6b800;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      display: none;
+    }
+    .success {
+      background-color: #e6ffe6;
+      color: #006600;
+    }
+    .error {
+      background-color: #ffe6e6;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CommBank Transaction Exporter</h2>
+    <button id="exportButton">Export Pending Transactions</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
